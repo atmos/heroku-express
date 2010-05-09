@@ -1,0 +1,14 @@
+%html{xmlns: "http://www.w3.org/1999/xhtml"}
+  %head
+    %title Example Express App on Heroku
+    %link{ rel: 'stylesheet', href: '/public/css/style.css' }
+    %script{ src: '/public/js/jquery.1.4.2.min.js' }
+    %script{ src: '/public/js/app.js' }
+  %body
+    #header
+      %h1
+        %a{ href: '/' }  Who Am I?
+    #main
+      #mid
+        #content
+          != body
