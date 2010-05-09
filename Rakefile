@@ -17,12 +17,16 @@ task :setup do |t|
         system("git submodule init")
         system("git submodule update")
         system("rm -rf .git")
+        system("rm -rf .gitmodules")
       end
       Dir['express/*'].each do |file|
         FileUtils.rm_rf(file) unless file =~ %r!express/lib!
       end
       Dir['express/lib/support/*/*'].each do |file|
         FileUtils.rm_rf(file) unless file =~ %r!express/lib/support/\w+/lib!
+      end
+      Dir['express/lib/support/*/.git'].each do |file|
+        FileUtils.rm_rf(file)
       end
     end
   end
