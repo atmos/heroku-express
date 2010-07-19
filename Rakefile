@@ -1,7 +1,7 @@
 # install all the shit you need to host this
 require 'fileutils'
 
-express_version  = ENV['EXPRESS_VERSION'] || '0.14.0'
+express_version  = ENV['EXPRESS_VERSION'] || '0.14.1'
 vendor_directory = File.join(File.dirname(__FILE__), 'vendor')
 
 desc "Package express to vendor/ for deployment"
