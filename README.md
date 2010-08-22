@@ -1,19 +1,16 @@
-whoami
-======
+heroku-express
+==============
 
-This is basically my Hello World app to test out [heroku's][heroku] experimental [node.js][node] support.
+This is basically a Hello World app to get going on [heroku's][heroku] experimental [node.js][node] support.
 
-I normally run my node apps with [kiwi][kiwi] but heroku doesn't support that
-currently.  You have to vendor all of your deps in your repo for now.  This app
-should be a good starting point for most people.
+You should probably be using [heroku-connect][heroku-connect] these days, but this still works too.
 
 Running
 =======
 
-    % rake
     % node server.js
 
 
 [heroku]: http://heroku.com
 [node]: http://nodejs.org
-[kiwi]: http://github.com/visionmedia/kiwi
+[heroku-connect]: http://github.com/atmos/heroku-connect
